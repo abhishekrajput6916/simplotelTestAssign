@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simplotel</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <!-- <h1>Hello World!</h1>  -->
+  <div class="container">
+    <div class="navbar">
+      <nav class="">
+        <ul class="nav-list">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Order</a>
+          </li>
+          <li>
+            <a href="#">Food</a>
+          </li>
+          <li>
+            <a href="#">Restaurant</a>
+          </li>
+          <li>
+            <a href="#">Testimonial</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <button class="menu-btn" onclick="toggleMenu()">
+          <img src="./HTML CSS Assignment/menu-bar.png" id="menu-btn" alt="menu-button">
+        </button>
+      </nav>
+    </div>
+    <main class="banner">
+      <div class="description-container">
+        <div class="description">
+          <h1>Lorem ipsum.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum excepturi dolores dicta fugit
+            quisquam, libero repudiandae ipsum, possimus soluta nulla cum ea culpa accusantium nostrum reprehenderit
+            placeat molestiae nemo delectus. Deleniti cum provident molestias dignissimos nobis officia atque veritatis
+            eaque ea illum, accusantium molestiae eius facilis nisi velit in, nulla quasi obcaecati libero. Nesciunt
+            molestiae quasi porro ad odit.?</p>
+          <button>Click Me!</button>
+        </div>
+      </div>
+      <div class="banner-img">
+        <img src="./HTML CSS Assignment/pexels-robin-stickel-70497.jpg" alt="">
+      </div>
+    </main>
+    <div class="section-1">
+      <div class="gallery">
+        <img id="food-img1" src="./HTML CSS Assignment/pexels-rachel-claire-6752433.jpg" alt="">
+        <img id="food-img2" src="./HTML CSS Assignment/pexels-mister-mister-3434523.jpg" alt="">
+        <img id="food-img3" src="./HTML CSS Assignment/pexels-eva-bronzini-6141651.jpg" alt="">
+      </div>
+      <div class="section-1-text-container">
+        <div class="section-1-text">
+          <h4>Lorem, ipsum.</h4>
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, fuga.</p>
+          <button class="">
+            <p>Click</p>
+            <img src="./HTML CSS Assignment/icons8-arrow-30.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    window.addEventListener("resize",()=>{
+      console.log("resize")
+      const nav= document.querySelector('.navbar nav ul')
+      if (window.innerWidth>=769) {
+        nav.style.display="flex" ;       
+      }else{
+        nav.style.display="none";        
+      }
+    })
+    function toggleMenu(e) {
+      const nav= document.querySelector('.navbar nav ul')
+      console.log("hii",window.innerWidth)
+      if(window.innerWidth<=768){
+        nav.style.display=nav.style.display==="none"?"flex":"none";
+      } 
+    }
+  </script>
+</body>
+
+</html>
